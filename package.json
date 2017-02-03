@@ -1,0 +1,14 @@
+{
+  "name": "logistics-layout",
+  "version": "1.0.0",
+  "author": "olshansky",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^2.3.2",
+    "gulp-concat-css": "^2.3.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sass-themes": "^2.0.1",
+    "gulp-uncss": "^1.0.6"
+  }
+}

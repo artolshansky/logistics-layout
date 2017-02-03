@@ -1,0 +1,63 @@
+body {
+  font: 'Open Sans', sans-serif; }
+
+.head-nav {
+  -webkit-box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.15); }
+
+.divider {
+  border-top: 1px solid #e7e7e7; }
+
+.navbar {
+  background: #fff;
+  border: 0;
+  border-radius: 0; }
+  .navbar .header-logo {
+    max-height: 200%;
+    margin-top: -10px; }
+  .navbar #login {
+    color: #658dc4;
+    text-decoration: underline; }
+
+.search-container {
+  background-color: #f7f7f7;
+  margin-top: -20px;
+  padding-top: 15px; }
+  .search-container input, .search-container button {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px; }
+  .search-container .form-control-feedback {
+    left: 0;
+    padding-left: 24px; }
+  .search-container .form-control {
+    padding-left: 30px; }
+
+.red-button {
+  background: rgba(189, 14, 59, 0.9);
+  color: #fff;
+  box-shadow: 0px 3px 0px rgba(140, 17, 49, 0.8); }
+
+.blue-button {
+  background: rgba(55, 134, 186, 0.9);
+  color: #fff;
+  box-shadow: 0px 3px 0px rgba(31, 96, 140, 0.8); }
+
+.red-button:hover {
+  background: #bd0e3b;
+  color: #f7f7f7;
+  box-shadow: 0px 3px 0px #8c1131; }
+
+.blue-button:hover {
+  color: #f7f7f7;
+  box-shadow: 0px 3px 0px #1f608c; }
+
+@media (min-width: 768px) {
+  .navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top; }
+  .navbar .navbar-collapse {
+    text-align: center; } }

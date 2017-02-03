@@ -1,0 +1,94 @@
+$regular: 400;
+$semibold: 500;
+$bold: 700;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+
+
+body {
+  font: 'Open Sans', sans-serif;
+}
+
+.head-nav{ 
+  -webkit-box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow:    0px 3px 15px 0px rgba(0, 0, 0, 0.15);
+  box-shadow:         0px 3px 15px 0px rgba(0, 0, 0, 0.15);
+}
+.divider {
+  border-top: 1px solid #e7e7e7;
+}
+
+.navbar {
+  background: #fff;
+  border: 0;
+  border-radius: 0;
+
+  .header-logo {
+    max-height: 200%;
+    margin-top: -10px;
+  } 
+  
+  #login {
+    color: #658dc4;
+    text-decoration: underline;
+  }
+}
+
+.search-container {
+  background-color: #f7f7f7;
+  margin-top: -20px;
+  padding-top: 15px;
+
+  input, button {
+    @include border-radius(3px);
+  }
+  .form-control-feedback {
+    left: 0;
+    padding-left: 24px;
+  }
+  .form-control {
+    padding-left: 30px;
+  }
+}
+
+.red-button {
+  background:  rgba(189, 14, 59, 0.9);
+  color: #fff;
+  box-shadow: 0px 3px 0px rgba(140, 17, 49, 0.8);
+}
+
+.blue-button {
+  background:  rgba(55, 134, 186, 0.9);
+  color: #fff;
+  box-shadow: 0px 3px 0px rgba(31, 96, 140, 0.8);
+}
+
+.red-button:hover {
+  background:  rgba(189, 14, 59, 1.0);
+  color: #f7f7f7;
+  box-shadow: 0px 3px 0px rgba(140, 17, 49, 1.0);
+}
+.blue-button:hover {
+  color: #f7f7f7;
+  box-shadow: 0px 3px 0px rgba(31, 96, 140, 1.0);
+}
+
+
+
+@media (min-width: 768px) {
+  .navbar .navbar-nav {
+      display: inline-block;
+      float: none;
+      vertical-align: top;
+  }
+
+  .navbar .navbar-collapse {
+      text-align: center;
+  }
+}
