@@ -1,6 +1,9 @@
 body {
   font: 'Open Sans', sans-serif; }
 
+.dropdown .fa, button .fa {
+  font-size: 70%; }
+
 .head-nav {
   -webkit-box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.15);
@@ -24,7 +27,7 @@ body {
   background-color: #f7f7f7;
   margin-top: -20px;
   padding-top: 15px; }
-  .search-container input, .search-container button {
+  .search-container input {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
@@ -51,8 +54,75 @@ body {
   box-shadow: 0px 3px 0px #8c1131; }
 
 .blue-button:hover {
+  background: #3786ba;
   color: #f7f7f7;
   box-shadow: 0px 3px 0px #1f608c; }
+
+.bg {
+  background: url("../img/banner.png") no-repeat center center;
+  height: 600px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1; }
+
+.jumbotron {
+  color: white;
+  height: 600px;
+  text-shadow: #444 0 1px 1px;
+  background: transparent; }
+
+.jumbotron-banner {
+  max-width: 600px;
+  margin: 50px auto; }
+  .jumbotron-banner .banner-header {
+    font-weight: 700;
+    font-size: 34px; }
+  .jumbotron-banner .banner-text {
+    font-weight: 400;
+    font-size: 18px;
+    margin: 40px auto; }
+
+.section1 {
+  height: 450px; }
+
+.section2 {
+  padding: 50px 0; }
+  .section2 span, .section2 button {
+    margin: 25px 0; }
+
+.slide-header {
+  font-weight: 400;
+  font-size: 26px; }
+
+.slide-text {
+  font-weight: 300;
+  font-size: 14px;
+  display: table; }
+  .slide-text i, .slide-text span {
+    display: table-cell; }
+  .slide-text i {
+    color: #3688bf;
+    padding-right: 10px; }
+
+.carousel-indicators {
+  bottom: -40px; }
+  .carousel-indicators li {
+    background: #fff;
+    border: none;
+    box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.5); }
+  .carousel-indicators li.active {
+    background: #4a94c6;
+    border: none;
+    box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.5); }
+
+.btn {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  font-size: 14px; }
 
 @media (min-width: 768px) {
   .navbar .navbar-nav {

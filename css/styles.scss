@@ -1,6 +1,7 @@
-$regular: 400;
-$semibold: 500;
+$regular: 300;
+$semibold: 400;
 $bold: 700;
+$link-color: #658dc4;
 
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
@@ -14,6 +15,10 @@ $bold: 700;
 body {
   font: 'Open Sans', sans-serif;
 }
+.dropdown .fa, button .fa {
+  font-size: 70%;
+}
+
 
 .head-nav{ 
   -webkit-box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.15);
@@ -35,7 +40,7 @@ body {
   } 
   
   #login {
-    color: #658dc4;
+    color: $link-color;
     text-decoration: underline;
   }
 }
@@ -45,7 +50,7 @@ body {
   margin-top: -20px;
   padding-top: 15px;
 
-  input, button {
+  input {
     @include border-radius(3px);
   }
   .form-control-feedback {
@@ -75,11 +80,91 @@ body {
   box-shadow: 0px 3px 0px rgba(140, 17, 49, 1.0);
 }
 .blue-button:hover {
+  background:  rgba(55, 134, 186, 1.0);
   color: #f7f7f7;
   box-shadow: 0px 3px 0px rgba(31, 96, 140, 1.0);
 }
 
 
+.bg {
+  background: url('../img/banner.png') no-repeat center center;
+  height: 600px;
+  position: fixed;
+  width: 100%;
+  top:0;
+  left:0;
+  z-index: -1;
+}
+.jumbotron {
+  color: white;
+  height: 600px;
+  text-shadow: #444 0 1px 1px;
+  background:transparent;
+}
+
+.jumbotron-banner {
+  max-width: 600px;
+  margin: 50px auto;
+
+  .banner-header {
+    font-weight: $bold;
+    font-size: 34px;
+  }
+
+  .banner-text {
+    font-weight: $semibold;
+    font-size: 18px;
+    margin: 40px auto;
+  }
+}
+.section1 {
+  height: 450px;
+}
+
+.section2 {
+  padding: 50px 0;
+  span, button {
+    margin: 25px 0;
+  }
+}
+
+.slide-header {
+  font-weight: $semibold;
+  font-size: 26px;
+}
+.slide-text {
+  font-weight: $regular;
+  font-size: 14px;
+  
+  display: table;
+  i, span {
+    display: table-cell;
+  }
+  i {
+    color: #3688bf;
+    padding-right: 10px;
+  }
+}
+
+.carousel-indicators {
+  bottom: -40px;
+  li {
+    background: #fff;
+    border: none;
+    box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.5);
+  }
+  li.active {
+    background: #4a94c6;
+    border: none;
+    box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.5); 
+  }
+}
+
+
+.btn { 
+  @include border-radius(3px);
+  font-size: 14px;
+}
 
 @media (min-width: 768px) {
   .navbar .navbar-nav {
