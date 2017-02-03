@@ -27,6 +27,8 @@ body {
   background-color: #f7f7f7;
   margin-top: -20px;
   padding-top: 15px; }
+  .search-container button {
+    padding: 5px 15px; }
   .search-container input {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -92,13 +94,15 @@ body {
   .section2 span, .section2 button {
     margin: 25px 0; }
 
-.slide-header {
+.text-header {
   font-weight: 400;
   font-size: 26px; }
 
-.slide-text {
+.line-text, .slide-text {
   font-weight: 300;
-  font-size: 14px;
+  font-size: 14px; }
+
+.slide-text {
   display: table; }
   .slide-text i, .slide-text span {
     display: table-cell; }
@@ -117,12 +121,30 @@ body {
     border: none;
     box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.5); }
 
+.section3 .container-fluid {
+  background-color: #f7f7f7;
+  padding: 70px 0; }
+
+.section3 p.line-text, .section3 p.slide-text {
+  padding: 20px 0; }
+
+.section3 .text-header {
+  padding-top: 30px; }
+
+.section3 ul li {
+  list-style: none;
+  padding-top: 10px; }
+
+.section3 ul:last-child {
+  padding-bottom: 50px; }
+
 .btn {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
   border-radius: 3px;
-  font-size: 14px; }
+  font-size: 14px;
+  padding: 10px 15px; }
 
 @media (min-width: 768px) {
   .navbar .navbar-nav {

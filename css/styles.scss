@@ -50,6 +50,9 @@ body {
   margin-top: -20px;
   padding-top: 15px;
 
+  button {
+    padding: 5px 15px;
+  }
   input {
     @include border-radius(3px);
   }
@@ -128,15 +131,20 @@ body {
   }
 }
 
-.slide-header {
+.text-header {
   font-weight: $semibold;
   font-size: 26px;
 }
-.slide-text {
+
+.line-text {
   font-weight: $regular;
   font-size: 14px;
-  
+}
+
+.slide-text {
+  @extend .line-text;
   display: table;
+
   i, span {
     display: table-cell;
   }
@@ -160,10 +168,31 @@ body {
   }
 }
 
+.section3 {
+  .container-fluid {
+    background-color: #f7f7f7;
+    padding: 70px 0;
+  }
+  p.line-text {
+    padding: 20px 0;
+  }
+  .text-header {
+    padding-top: 30px;
+  }
+  ul li {
+    list-style: none;
+    padding-top: 10px;
+  }
+  ul:last-child {
+    padding-bottom: 50px;
+  }
+}
+
 
 .btn { 
   @include border-radius(3px);
   font-size: 14px;
+  padding: 10px 15px;
 }
 
 @media (min-width: 768px) {
