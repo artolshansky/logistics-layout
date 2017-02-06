@@ -55,10 +55,13 @@ body {
   }
   input {
     @include border-radius(3px);
+    font-size: 12px;
+    font-weight: $regular;
   }
   .form-control-feedback {
     left: 0;
     padding-left: 24px;
+    color: #9f9f9f;
   }
   .form-control {
     padding-left: 30px;
@@ -89,39 +92,41 @@ body {
 }
 
 
-.bg {
-  background: url('../img/banner.png') no-repeat center center;
-  height: 600px;
-  position: fixed;
-  width: 100%;
-  top:0;
-  left:0;
-  z-index: -1;
-}
-.jumbotron {
-  color: white;
-  height: 600px;
-  text-shadow: #444 0 1px 1px;
-  background:transparent;
-}
-
-.jumbotron-banner {
-  max-width: 600px;
-  margin: 50px auto;
-
-  .banner-header {
-    font-weight: $bold;
-    font-size: 34px;
-  }
-
-  .banner-text {
-    font-weight: $semibold;
-    font-size: 18px;
-    margin: 40px auto;
-  }
-}
 .section1 {
   height: 450px;
+
+  .bg {
+    background: url('../img/banner.png') no-repeat center center;
+    height: 600px;
+    position: fixed;
+    width: 100%;
+    top:0;
+    left:0;
+    z-index: -1;
+    /* background-size: 160%; */
+  }
+  .jumbotron {
+    color: white;
+    height: 600px;
+    max-width: 600px;
+    background: transparent;
+  }
+
+  .jumbotron-banner {
+    
+    margin: 50px auto;
+
+    .banner-header {
+      font-weight: $bold;
+      font-size: 34px;
+    }
+
+    .banner-text {
+      font-weight: $semibold;
+      font-size: 18px;
+      margin: 40px auto;
+    }
+  }
 }
 
 .section2 {
@@ -186,7 +191,105 @@ body {
   ul:last-child {
     padding-bottom: 50px;
   }
+  ul {
+    padding-left: 0;
+  }
 }
+
+.section4 {
+  .section4-header {
+    font-weight: $regular;
+    font-size: 26px;
+    padding: 30px 0;
+  }
+  .nav-tabs li a {
+    @include border-radius(3px);
+    font-weight: 500;
+    font-size: 15px;
+    color: #262626;
+    padding: 10px 30px;
+  }
+  
+  .nav-tabs > li.active > a, 
+  .nav-tabs > li > a:hover,
+  .tab-content{
+    background-color: #f9f9f9;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .nav-tabs > li.active.tab1 > a {
+    box-shadow: 5px -3px 15px -3px rgba(50, 50, 50, 0.1);
+  }
+  .nav-tabs > li.active.tab2 > a {
+    box-shadow: -5px -3px 15px -3px rgba(50, 50, 50, 0.1);
+  }
+
+  .tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    padding: 10px;
+  }
+  .nav-tabs {
+      margin-bottom: 0;
+  }
+  
+  input, select, button {
+    color: #9f9f9f;
+    border-radius: 3px;
+    background-color: #fff;
+    padding: 10px 30px;
+  }
+}
+
+.section5 {
+  color: #fff;
+  .container-fluid {
+    background: url('../img/sub-bg.png') no-repeat center center;
+    padding: 50px 0;
+    /* background-size: 100%; */
+    height: 350px;
+  }
+  p {
+    padding-bottom: 20px;
+  }
+  .sub-header {
+    font-size: 26px;
+    font-weight: $semibold;
+  }
+  .sub-text {
+    font-size: 15px;
+    font-weight: $regular;
+  }
+  form {
+    max-width: 850px;
+    margin: 0 auto;
+
+    input, button {
+      margin: 10px;
+    }
+  }
+
+  form input {
+    @include border-radius(3px);
+    border: 0;
+    padding: 10px 10px 10px 15px;
+    color: #555;
+    width: 200px;
+  }
+  .blue-button {
+    width: 150px;
+  }
+  .glyphicons {
+    color: #555;
+  }
+
+  input::-webkit-calendar-picker-indicator {
+    opacity: 1;
+    color: #C0C0C0;
+  }
+}
+
 
 
 .btn { 
@@ -204,5 +307,13 @@ body {
 
   .navbar .navbar-collapse {
       text-align: center;
+  }
+}
+
+@media (max-width: 991px) {
+  .section5 {
+    form button.btn {
+      width: 200px;
+    }
   }
 }

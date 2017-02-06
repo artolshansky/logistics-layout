@@ -33,10 +33,13 @@ body {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
-    border-radius: 3px; }
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 300; }
   .search-container .form-control-feedback {
     left: 0;
-    padding-left: 24px; }
+    padding-left: 24px;
+    color: #9f9f9f; }
   .search-container .form-control {
     padding-left: 30px; }
 
@@ -60,34 +63,31 @@ body {
   color: #f7f7f7;
   box-shadow: 0px 3px 0px #1f608c; }
 
-.bg {
-  background: url("../img/banner.png") no-repeat center center;
-  height: 600px;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: -1; }
-
-.jumbotron {
-  color: white;
-  height: 600px;
-  text-shadow: #444 0 1px 1px;
-  background: transparent; }
-
-.jumbotron-banner {
-  max-width: 600px;
-  margin: 50px auto; }
-  .jumbotron-banner .banner-header {
-    font-weight: 700;
-    font-size: 34px; }
-  .jumbotron-banner .banner-text {
-    font-weight: 400;
-    font-size: 18px;
-    margin: 40px auto; }
-
 .section1 {
   height: 450px; }
+  .section1 .bg {
+    background: url("../img/banner.png") no-repeat center center;
+    height: 600px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    /* background-size: 160%; */ }
+  .section1 .jumbotron {
+    color: white;
+    height: 600px;
+    max-width: 600px;
+    background: transparent; }
+  .section1 .jumbotron-banner {
+    margin: 50px auto; }
+    .section1 .jumbotron-banner .banner-header {
+      font-weight: 700;
+      font-size: 34px; }
+    .section1 .jumbotron-banner .banner-text {
+      font-weight: 400;
+      font-size: 18px;
+      margin: 40px auto; }
 
 .section2 {
   padding: 50px 0; }
@@ -138,6 +138,88 @@ body {
 .section3 ul:last-child {
   padding-bottom: 50px; }
 
+.section3 ul {
+  padding-left: 0; }
+
+.section4 .section4-header {
+  font-weight: 300;
+  font-size: 26px;
+  padding: 30px 0; }
+
+.section4 .nav-tabs li a {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  font-weight: 500;
+  font-size: 15px;
+  color: #262626;
+  padding: 10px 30px; }
+
+.section4 .nav-tabs > li.active > a,
+.section4 .nav-tabs > li > a:hover,
+.section4 .tab-content {
+  background-color: #f9f9f9;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px; }
+
+.section4 .nav-tabs > li.active.tab1 > a {
+  box-shadow: 5px -3px 15px -3px rgba(50, 50, 50, 0.1); }
+
+.section4 .nav-tabs > li.active.tab2 > a {
+  box-shadow: -5px -3px 15px -3px rgba(50, 50, 50, 0.1); }
+
+.section4 .tab-content {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  padding: 10px; }
+
+.section4 .nav-tabs {
+  margin-bottom: 0; }
+
+.section4 input, .section4 select, .section4 button {
+  color: #9f9f9f;
+  border-radius: 3px;
+  background-color: #fff;
+  padding: 10px 30px; }
+
+.section5 {
+  color: #fff; }
+  .section5 .container-fluid {
+    background: url("../img/sub-bg.png") no-repeat center center;
+    padding: 50px 0;
+    /* background-size: 100%; */
+    height: 350px; }
+  .section5 p {
+    padding-bottom: 20px; }
+  .section5 .sub-header {
+    font-size: 26px;
+    font-weight: 400; }
+  .section5 .sub-text {
+    font-size: 15px;
+    font-weight: 300; }
+  .section5 form {
+    max-width: 850px;
+    margin: 0 auto; }
+    .section5 form input, .section5 form button {
+      margin: 10px; }
+  .section5 form input {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    border: 0;
+    padding: 10px 10px 10px 15px;
+    color: #555;
+    width: 200px; }
+  .section5 .blue-button {
+    width: 150px; }
+  .section5 .glyphicons {
+    color: #555; }
+  .section5 input::-webkit-calendar-picker-indicator {
+    opacity: 1;
+    color: #C0C0C0; }
+
 .btn {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -153,3 +235,7 @@ body {
     vertical-align: top; }
   .navbar .navbar-collapse {
     text-align: center; } }
+
+@media (max-width: 991px) {
+  .section5 form button.btn {
+    width: 200px; } }
