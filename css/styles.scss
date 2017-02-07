@@ -304,9 +304,81 @@ body {
     font-size: 14px;
   }
   .news-link {
-    color: #658dc4;
+    color: $link-color;
     font-size: 13px;
     text-decoration: underline;
+  }
+}
+
+footer {
+  padding-top: 30px;
+  
+  a {
+    color: #212121;
+  }
+
+  section .container-fluid {
+    background-color: #f7f7f7;
+  }
+  .nav-container {
+    border-bottom: 1px solid #c9c9c9;
+    a {
+      font-size: 13px;
+    }
+    img {
+      max-height: 200%;
+      margin-top: -10px;
+    }
+  }
+  .footer-links {
+    padding: 20px 0;
+    font-size: 14px;
+    section {
+      padding-top: 20px;
+
+      .box-header {
+        font-weight: $semibold;
+      }
+      ul {
+        list-style: none;
+
+        li {
+          padding-top: 5px;
+          font-size: 13px;
+          font-weight: $regular;
+        }
+      }
+      p {
+        margin: 0;
+      }
+
+      .phone {
+        font-size: 20px;
+        font-weight: $semibold;
+      }
+      .order-cell {
+        color: $link-color;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      address {
+        color: #646464;
+        padding: 10px 0;
+        margin: 0;
+      }
+      .social-icons a:hover {
+        text-decoration: none;
+      }
+      .soc-icon {
+        padding-right: 10px;
+      }
+    }    
+  }
+
+  .copy {
+    font-size: 12px;
+    padding: 10px 0;
+    margin: 0;
   }
 }
 

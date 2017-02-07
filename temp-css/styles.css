@@ -236,6 +236,54 @@ body {
   font-size: 13px;
   text-decoration: underline; }
 
+footer {
+  padding-top: 30px; }
+  footer a {
+    color: #212121; }
+  footer section .container-fluid {
+    background-color: #f7f7f7; }
+  footer .nav-container {
+    border-bottom: 1px solid #c9c9c9; }
+    footer .nav-container a {
+      font-size: 13px; }
+    footer .nav-container img {
+      max-height: 200%;
+      margin-top: -10px; }
+  footer .footer-links {
+    padding: 20px 0;
+    font-size: 14px; }
+    footer .footer-links section {
+      padding-top: 20px; }
+      footer .footer-links section .box-header {
+        font-weight: 400; }
+      footer .footer-links section ul {
+        list-style: none; }
+        footer .footer-links section ul li {
+          padding-top: 5px;
+          font-size: 13px;
+          font-weight: 300; }
+      footer .footer-links section p {
+        margin: 0; }
+      footer .footer-links section .phone {
+        font-size: 20px;
+        font-weight: 400; }
+      footer .footer-links section .order-cell {
+        color: #658dc4;
+        text-decoration: underline;
+        cursor: pointer; }
+      footer .footer-links section address {
+        color: #646464;
+        padding: 10px 0;
+        margin: 0; }
+      footer .footer-links section .social-icons a:hover {
+        text-decoration: none; }
+      footer .footer-links section .soc-icon {
+        padding-right: 10px; }
+  footer .copy {
+    font-size: 12px;
+    padding: 10px 0;
+    margin: 0; }
+
 .section-header {
   font-weight: 400;
   font-size: 26px;
