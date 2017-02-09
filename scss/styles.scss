@@ -95,7 +95,7 @@ body {
 .section1 {
   height: 450px;
   .bg {
-    background-image: url("../img/banner.png");
+    background-image: url("./img/banner.png");
     height: 100%; 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -255,22 +255,18 @@ body {
 
 .section5 {
   color: #fff;
-  
-  /* .container-fluid {
-    background: url('../img/sub-bg.png') no-repeat center center;
-    padding: 50px 0;
-    height: 350px;
-  } */
+
   .bg2 {
-    background-image: url("../img/sub-bg.png");
+    background-image: url("./img/sub-bg.png");
     height: 350px; 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
-  }
+    padding: 40px 0;
+  } 
+
   p {
     padding-bottom: 20px;
   }

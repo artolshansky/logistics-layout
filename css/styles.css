@@ -66,7 +66,7 @@ body {
 .section1 {
   height: 450px; }
   .section1 .bg {
-    background-image: url("../img/banner.png");
+    background-image: url("./img/banner.png");
     height: 100%;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -187,11 +187,6 @@ body {
 
 .section5 {
   color: #fff;
-  /* .container-fluid {
-    background: url('../img/sub-bg.png') no-repeat center center;
-    padding: 50px 0;
-    height: 350px;
-  } */
   /* .datalist:before,
   .datalist:after {
     content: '';
@@ -213,13 +208,14 @@ body {
     background: #000;
   } */ }
   .section5 .bg2 {
-    background-image: url("../img/sub-bg.png");
+    background-image: url("./img/sub-bg.png");
     height: 350px;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; }
+    background-size: cover;
+    padding: 40px 0; }
   .section5 p {
     padding-bottom: 20px; }
   .section5 .sub-header {
