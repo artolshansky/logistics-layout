@@ -197,6 +197,8 @@ body {
 }
 
 .section4 {
+  padding: 30px 0; 
+
   .nav-tabs li a {
     @include border-radius(3px);
     font-weight: 500;
@@ -221,19 +223,31 @@ body {
   }
 
   .tab-content {
-    border-left: 1px solid #ddd;
-    border-right: 1px solid #ddd;
+    border: 1px solid #ddd;
+    border-top: 0;
     padding: 10px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
   }
   .nav-tabs {
       margin-bottom: 0;
   }
-  
-  input, select, button {
-    color: #9f9f9f;
-    border-radius: 3px;
-    background-color: #fff;
-    padding: 10px 30px;
+  form {
+    padding: 30px 0;
+    div.col-sm-4 {
+      padding: 0; 
+    }
+
+    button {
+      margin-top: 30px;
+      i {
+        font-size: 12px;
+        padding: 0 5px;
+      }
+    }
+  }
+  form > .container {
+    display: table-cell;
   }
 }
 
@@ -280,10 +294,28 @@ body {
     color: #555;
   }
 
-  input::-webkit-calendar-picker-indicator {
-    opacity: 1;
-    color: #C0C0C0;
+  
+  
+  /* .datalist:before,
+  .datalist:after {
+    content: '';
+    position: absolute;
+    pointer-events: none;  
   }
+  .datalist:before {
+    content: '\f078';
+    font-family: 'FontAwesome';
+    top: 50%;
+    right: 2px;
+    margin-top: -20px;
+    font-size: 10px;
+    line-height: 40px;
+    color: #212121;
+  }
+
+  .datalist:hover:after {
+    background: #000;
+  } */
 }
 
 .section6 {
@@ -381,11 +413,19 @@ footer {
     margin: 0;
   }
 }
-
+.navbar-toggle {
+  .icon-bar {
+    background-color: #888;
+  }
+  border: 1px solid #ddd;
+}
+input::-webkit-calendar-picker-indicator {
+  opacity: 1;
+}
 .section-header {
   font-weight: $semibold;
   font-size: 26px;
-  padding: 30px 0;
+  padding: 15px 0;
 }
 .btn { 
   @include border-radius(3px);
@@ -410,5 +450,9 @@ footer {
     form button.btn {
       width: 200px;
     }
+  }
+  footer .nav-container img, .navbar .header-logo  {
+    max-height: 150%;
+    margin-top: -5px;
   }
 }

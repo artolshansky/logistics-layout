@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Nekrasov logistics</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="bootstrap.css">
@@ -198,15 +199,126 @@
     <section class="section4" >
       <div class="container">
         <h1 class="text-center section-header">Грузоперевозки онлайн - "Nekrasov logostics"</h1>
-        
-        <form>
-          <div class="col-xs-6">
-        
-          </div>
-          <div class="col-xs-6">
-            
-          </div>
+
+    <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+      <li class="active tab1"><a href="#tab1" data-toggle="tab">Red</a></li>
+      <li class="tab2"><a href="#tab2" data-toggle="tab">Orange</a></li>
+    </ul>
+    <div id="my-tab-content" class="tab-content">
+      <div class="tab-pane active" id="tab1">
+        <form class="form-horizontal">
+          <div class="container">
+            <div class="col-xs-12 col-sm-6">
+              <div class="form-group">
+                <label for="from-state" class="col-sm-3 contol-label">Откуда: </label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" list="states" id="from-state" placeholder="Выберите страну">
+                  <datalist id="states" >
+                    <option>Россия</option>
+                    <option>Украина</option>
+                  </datalist>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-3 col-sm-9">
+                  <input type="text" class="form-control" list="regions" id="from-regions" placeholder="Выберите регион">
+                  <datalist id="regions">
+                    <option>Краснодарский округ</option>
+                    <option>Харьковская область</option>
+                  </datalist>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="input-body" class="col-sm-3 ">Кузов: </label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" list="bodyes" id="input-body">
+                  <datalist id="bodyes" >
+                    <option>13</option>
+                    <option>15</option>
+                  </datalist>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="weight-from" class="col-sm-3 ">Вес, т: </label>
+                <div class="col-sm-9">
+                  <label for="weight-from" class="col-sm-2">от</label>
+                  <div class="col-sm-4">
+                    <input type="text" class="form-control" id="weight-from">
+                  </div>
+                  <label for="weight-to" class="col-sm-2">до</label>
+                  <div class="col-sm-4">
+                    <input type="text" class="form-control" id="weight-to">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6">
+              <div class="form-group">
+              <label for="to-state" class="col-sm-3 contol-label">Куда: </label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" list="states" id="to-state" placeholder="Выберите страну">
+                  <datalist id="states" >
+                    <option>Россия</option>
+                    <option>Украина</option>
+                  </datalist>
+                </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-offset-3 col-sm-9">
+                    <input type="text" class="form-control" list="regions" id="to-regions" placeholder="Выберите регион">
+                    <datalist id="regions">
+                      <option>Краснодарский округ</option>
+                      <option>Харьковская область</option>
+                    </datalist>
+                  </div>
+                </div>
+
+            <div class="form-group">
+              <label for="date" class="col-sm-3 ">Дата: </label>
+              <div class="col-sm-9">
+                <input type="date" class="form-control" id="date" placeholder="01 /   январь    / 2016">
+              </div>
+            </div>
+            <div class="form-group">
+                <label for="volume-from" class="col-sm-3">Объем, м3: </label>
+                <div class="col-sm-9">
+                  <label for="volume-from" class="col-sm-2">от</label>
+                  <div class="col-sm-4">
+                    <input type="text" class="form-control" id="volume-from">
+                  </div>
+                  <label for="volume-to" class="col-sm-2">до</label>
+                  <div class="col-sm-4">
+                    <input type="text" class="form-control" id="volume-to">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-12 text-center">
+              <div class="col-xs-offset-4 col-xs-2">
+                <button class="btn blue-button">
+                  <i class="fa fa-search" aria-hidden="true"></i> 
+                  Найти
+                </button>
+              </div>
+              <div class=" col-xs-2">
+                <button class="btn red-button">
+                  Добавить груз 
+                  <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </div>  
         </form>
+      </div>
+      <div class="tab-pane" id="tab2">
+       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae ipsum, illum officiis officia possimus modi quasi porro maxime, minus adipisci iste, molestias, soluta doloribus. Distinctio harum nesciunt dignissimos hic odio.
+        
+      </div>
+    </div>
+        
+        
       </div>
     </section>
 
@@ -220,15 +332,16 @@
             <div class="col-xs-6 col-md-3">
             <input type="email" placeholder="Ваш E-mail">
             </div>
-            <div class="col-xs-6 col-md-3">
-            <input type="text" placeholder="Тип трекера" list="numbers" />
-            <datalist id="numbers">
-              <option>One</option>
-              <option>Two</option>
-            </datalist>
+            <div class="col-xs-6 col-md-3 datalist">
+              <input  type="text" placeholder="Тип трекера" list="numbers" />
+              <datalist id="numbers">
+                <option>One</option>
+                <option>Two</option>
+              </datalist>
             </div>
+
             <div class="col-xs-6 col-md-3">
-            <input type="tel" placeholder="+7 ( ___ ) ___ - __ - __" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
+            <input type="tel" placeholder="+7 ( ___ ) ___ - __ - __" id="phone">
             </div>
             <div class="col-xs-6 col-md-3">
             <button class="btn blue-button" type="button">Подключиться</button>  
@@ -352,5 +465,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="parallax.js"></script>
+  <script src="jquery.maskedinput.min.js"></script>
+  <script> 
+    jQuery(function($){
+      $("#phone").mask("+7 ( 999 ) 999 - 99 - 99");
+    });
+  </script>
 </body>
 </html>
